@@ -11,7 +11,7 @@
     "scheme": "com.lmd0612.fooddelivery",
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png", //here put your icon
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.lmd0612.fooddelivery",
@@ -24,7 +24,11 @@
       "permissions": [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION",
-        "ACCESS_BACKGROUND_LOCATION"
+        "ACCESS_BACKGROUND_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.INTERNET"
       ]
     },
     "plugins": [
@@ -54,6 +58,7 @@
       ],
       "@react-native-firebase/app",
       "@react-native-firebase/auth"
-    ]
+    ],
+    "owner": "lmd0612"
   }
 }
